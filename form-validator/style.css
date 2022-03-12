@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+:root {
+  --primary_color: #2691d9;
+  --secondary_color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #3ca7ee, #9b408f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+.container {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #adadad;
+}
+
+.form-control span {
+  border-bottom: 2px solid var(--primary_color);
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 0;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+.form-control input:focus ~ span {
+  width: 100%;
+}
+
+.form-control.error small {
+  color: var(--secondary_color);
+}
+
+.form-control.error input {
+  border-bottom: 2px solid var(--secondary_color);
+}
+
+.btn__submit {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  background: #2691d9;
+  color: white;
+  font-weight: 600;
+  margin: 25px 0;
+  transition: 0.3s;
+}
+
+.sigup--link {
+  margin: 0 auto;
+}
+
+.sigup--link a {
+  text-decoration: none;
+  color: #2691d9;
+}
+
+.sigup--link a:hover {
+  text-decoration: underline;
+}
+
+.btn__submit:hover {
+  background: #08609a;
+}
+
+/* input[type="text"] {
+  width: 80%;
+  height: 35px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  color: #000000;
+  font-size: 18px;
+}
+
+sigup--link {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #2691d9;
+} */
+/* #2691d9 */
