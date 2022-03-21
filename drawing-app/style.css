@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.tool {
+  background: rgb(73, 76, 238);
+  display: flex;
+  align-items: center;
+}
+
+.tool > * {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#save {
+  margin-left: auto;
+}
+
+canvas {
+  display: block;
+  border: 1px solid;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  outline: none;
+}
